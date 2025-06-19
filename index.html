@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Skrining Risiko Hipertensi</title>
+</head>
+<body>
+    <h1>Form Skrining Risiko Hipertensi</h1>
+    <form action="proses.php" method="POST">
+
+        <!-- Pertanyaan 1 -->
+        <p>1. Seberapa sering Anda mengonsumsi makanan tinggi garam?</p>
+        <input type="radio" name="garam" value="1" required> 1<br>
+        <input type="radio" name="garam" value="2"> 2<br>
+        <input type="radio" name="garam" value="3"> 3<br>
+        <input type="radio" name="garam" value="4"> 4<br><br>
+
+        <!-- Pertanyaan 2 -->
+        <p>2. Berapa kali Anda melakukan aktivitas fisik (olahraga) dalam seminggu?</p>
+        <input type="radio" name="olahraga" value="1" required> 1<br>
+        <input type="radio" name="olahraga" value="2"> 2<br>
+        <input type="radio" name="olahraga" value="3"> 3<br>
+        <input type="radio" name="olahraga" value="4"> 4<br><br>
+
+        <!-- Pertanyaan 3 -->
+        <p>3. Apakah Anda sering mengalami stres berlebihan atau cemas?</p>
+        <input type="radio" name="stres" value="1" required> 1<br>
+        <input type="radio" name="stres" value="2"> 2<br>
+        <input type="radio" name="stres" value="3"> 3<br>
+        <input type="radio" name="stres" value="4"> 4<br><br>
+
+        <!-- Pertanyaan 4 -->
+        <p>4. Apakah ada riwayat hipertensi dalam keluarga Anda?</p>
+        <input type="radio" name="riwayat" value="1" required> Ya<br>
+        <input type="radio" name="riwayat" value="2"> Tidak<br><br>
+
+        <!-- Pertanyaan 5 -->
+        <p>5. Apakah Anda merokok?</p>
+        <input type="radio" name="merokok" value="1" required> 1<br>
+        <input type="radio" name="merokok" value="2"> 2<br>
+        <input type="radio" name="merokok" value="3"> 3<br>
+        <input type="radio" name="merokok" value="4"> 4<br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+
+    <h2>Rentang Skor Risiko Hipertensi</h2>
+    <table border="1" cellpadding="8">
+        <tr><th>Total Skor</th><th>Kategori Risiko</th></tr>
+        <tr><td>5-9</td><td>Rendah</td></tr>
+        <tr><td>10-14</td><td>Sedang</td></tr>
+        <tr><td>15-20</td><td>Tinggi</td></tr>
+    </table>
+
+    <h3>Catatan penting:</h3>
+    <ol>
+        <li>Jika Anda tidak memiliki risiko hipertensi, teruslah jaga kesehatan Anda.</li>
+        <li>Jika Anda memiliki risiko sedang untuk hipertensi, dianjurkan untuk melakukan pemeriksaan kesehatan.</li>
+        <li>Jika Anda memiliki risiko tinggi untuk hipertensi, dianjurkan untuk membuka halaman EdukasiKesehatan yang telah disediakan.</li>
+    </ol>
+</body>
+</html>
